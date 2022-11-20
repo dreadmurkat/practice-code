@@ -22,6 +22,8 @@ var sums = sumOfEvenAndOddNumbers(numbers);
 console.log("sum of even numbers = " + sums[0]);
 console.log("sum of odd numbers = " + sums[1]);
 
+//fgh gfh fgh 
+
     
     
 
