@@ -3,13 +3,7 @@
 
 function factors(number) {
   var factors = [];
-/*
-  var i = 0;
-  while(i<number){
-    //code
-    i++;
-  }
-*/
+
   var sqrtNumber = Math.sqrt(number)
 for(var i = 2; i <= sqrtNumber ; i++) {
         console.log(i)
@@ -17,8 +11,11 @@ for(var i = 2; i <= sqrtNumber ; i++) {
         if(number % i === 0) {
         factors.push(i)  
 
+
         }
-                          
+        var otherFactors = number / i
+        factors.push(otherFactors)
+
     }
 
     
