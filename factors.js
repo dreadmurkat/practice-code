@@ -12,11 +12,12 @@ for(var i = 2; i <= sqrtNumber ; i++) {
         factors.push(i)  
 
 
-        }
+        
         var otherFactors = number / i
         factors.push(otherFactors)
-
-    }
+        }
+    
+      }
 
     
     return factors;
