@@ -7,17 +7,25 @@ function factors(number) {
     console.log(i)
 
     if (number % i === 0) {
-      factors.push(i)
-
+    // if the number is not already in the array  i want to add it to the array
+     
+      if(factors.includes(i) === false) {
+        factors.push(i);
+      }
+         
       var otherFactors = number / i
-      factors.push(otherFactors)
+      if(otherFactors == number / )  {
+        factors.push(otherFactors)
+      }
+      
+      
     }
 
   }
-
+factors.sort();
   return factors;
 }
 
-var number = 100;
+var number = 16;
 var factors = factors(number);
 console.log("factors = " + factors);
