@@ -1,0 +1,33 @@
+
+
+function factors(number) {
+  var factors = [];
+/*
+  var i = 0;
+  while(i<number){
+    //code
+    i++;
+  }
+*/
+  var sqrtNumber = Math.sqrt(number)
+for(var i = 2; i <= sqrtNumber ; i++) {
+        console.log(i)
+        
+        if(number % i === 0) {
+        factors.push(i)  
+
+        }
+                          
+    }
+    
+
+    
+    return factors;
+
+    
+}
+
+
+var number = 100;
+var factors = factors(number);
+console.log("factors = " + factors);
