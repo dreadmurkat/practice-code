@@ -1,0 +1,36 @@
+
+function numberFrequency() {
+
+
+//store numbers in a colection
+numbers = [1, 1, 2, 3, 3, 4, 1, 99];
+
+
+let occurrences = new Map();
+
+
+//count how manyt times each number occurs
+for (let i = 0; i < numbers.length; i++) {
+    if (occurrences.has(numbers[i])) {
+        let value = occurrences.get(numbers[i]);
+        occurrences.set(numbers[i], value + 1 );
+    }
+    else{
+        occurrences.set(numbers[i], 1 );
+
+    }
+
+    
+
+
+    
+}
+console.log(occurrences);
+
+}
+numberFrequency();   
+
+
+  
+//write the numbers and how many times they occured
+
